@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css?family=VT323&display=swap');
+body {
+  min-height: 100vh;
+  background: black;
+  color: white;
+  font-family: VT323;
+  letter-spacing: 1.1px;
+  text-align: justify;
+  display: grid;
+  grid-template-columns: 0 1fr 0;
+  grid-template-rows: 150px 50px 1fr 50px;
+  grid-template-areas: ". header ." ". menu ." ". content ." ". footer .";
+}
+body p, body ul {
+  font-size: 1.4em;
+  line-height: 1.1;
+}
+@media (min-width: 520px) {
+  body {
+    grid-template-columns: 1fr 520px 1fr;
+  }
+}
+.header {
+  grid-area: header;
+  display: grid;
+  justify-items: center;
+  align-items: end;
+  grid-template-columns: 1fr 120px 1fr;
+  grid-template-rows: 1fr 30px;
+  grid-template-areas: "code cross faith" ". for .";
+  font-size: 2em;
+}
+.header .cross {
+  grid-area: cross;
+}
+.header .code {
+  grid-area: code;
+  justify-self: end;
+}
+.header .for {
+  grid-area: for;
+}
+.header .faith {
+  grid-area: faith;
+  justify-self: start;
+}
+.menu {
+  grid-area: menu;
+}
+.menu ul {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+}
+.menu ul li {
+  margin-right: 10px;
+}
+.menu ul li a {
+  text-decoration: none;
+  color: white;
+}
+.menu ul li a:hover {
+  text-decoration: underline;
+}
+.content {
+  grid-area: content;
+}
+.content .verse {
+  background: white;
+  color: black;
+}
+.footer {
+  grid-area: footer;
+}
