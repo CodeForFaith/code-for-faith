@@ -4,7 +4,7 @@ body {
   min-height: 100vh;
   background: black;
   color: white;
-  font-family: VT323;
+  font-family: VT323, monospace;
   letter-spacing: 1.1px;
   text-align: justify;
   display: grid;
