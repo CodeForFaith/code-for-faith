@@ -100,3 +100,33 @@ body p, body ul {
 .footer {
   grid-area: footer;
 }
+
+/*typing cursor*/
+.hidden {
+  /* display: none; */
+  visibility: hidden;
+}
+
+.typed-cursor,
+.typed-cursor-blink {
+  line-height: 1;
+}
+
+.typed-cursor-blink {
+  visibility: hidden;
+  animation: blink 1s 3;
+}
+
+@keyframes blink {
+  0% {
+    visibility: hidden;
+  }
+
+  50% {
+    visibility: hidden;
+  }
+
+  100% {
+    visibility: visible;
+  }
+}
