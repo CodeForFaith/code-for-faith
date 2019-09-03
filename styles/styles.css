@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=VT323&display=swap');
+@import url("https://fonts.googleapis.com/css?family=VT323&display=swap");
 
 body {
   min-height: 100vh;
@@ -9,11 +9,12 @@ body {
   text-align: justify;
   display: grid;
   grid-template-columns: 0 1fr 0;
-  grid-template-rows: 150px 50px 1fr 50px;
+  grid-template-rows: 150px 50px 1fr 40px;
   grid-template-areas: ". header ." ". menu ." ". content ." ". footer .";
 }
 
-body p, body ul {
+body p,
+body ul {
   line-height: 1.1;
 }
 
@@ -99,8 +100,14 @@ body p, body ul {
 
 .footer {
   grid-area: footer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
+.footer .menu ul {
+  margin: 0;
+}
 /*typing cursor*/
 .hidden {
   /* display: none; */
