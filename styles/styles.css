@@ -98,6 +98,14 @@ body ul {
   border-bottom: 1px solid white;
 }
 
+.qr {
+  text-align: center;
+}
+
+.qr p {
+  text-align: left;
+}
+
 .footer {
   grid-area: footer;
   display: flex;
@@ -108,6 +116,7 @@ body ul {
 .footer .menu ul {
   margin: 0;
 }
+
 /*typing cursor*/
 .hidden {
   visibility: hidden;
