@@ -103,10 +103,6 @@ body ul {
   text-align: center;
 }
 
-.qr p {
-  text-align: left;
-}
-
 .footer {
   grid-area: footer;
   display: flex;
