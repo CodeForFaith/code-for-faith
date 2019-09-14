@@ -5,3 +5,7 @@
 </h1>
 
 [https://CodeForFaith.com](https://codeforfaith.com)
+
+## Todo:
+- [ ] add apps page
+- [ ] migrate to [GatsbyJS](https://www.gatsbyjs.org/)
