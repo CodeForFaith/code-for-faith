@@ -9,4 +9,4 @@
 ## Todo:
 - [ ] add apps page
 - [ ] migrate to [GatsbyJS](https://www.gatsbyjs.org/)
-- [ ] add CodePen icon to the footer links (https://codepen.io/CodeForFaith)
+- [x] add CodePen icon to the footer links (https://codepen.io/CodeForFaith)
