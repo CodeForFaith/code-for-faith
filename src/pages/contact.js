@@ -7,7 +7,7 @@ const ContactPage = () => {
 
   return (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="Contact" />
     <article className="contact">
         <p>Email: <a href="mailto:codeforfaith@gmail.com">codeforfaith@gmail.com</a></p>
       </article>
