@@ -7,7 +7,7 @@ const UpdatesPage = () => {
 
   return (
   <Layout>
-    <SEO title="QR" />
+    <SEO title="Updates" />
     <article class="update">
               <p>
                   date: 09/15/2019<br/>

@@ -7,7 +7,7 @@ const ResourcesPage = () => {
 
   return (
   <Layout>
-    <SEO title="QR" />
+    <SEO title="Resources" />
     <article className="resource">
         <div className="title">Bible:</div>
         <ul>
