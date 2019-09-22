@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=VT323&display=swap");
 
 body {
+  margin: 0;
+}
+
+#gatsby-focus-wrapper {
   min-height: 100vh;
   background: black;
   color: white;
@@ -11,16 +15,16 @@ body {
   grid-template-columns: 0 1fr 0;
   grid-template-rows: 150px 50px 1fr 40px;
   grid-template-areas: ". header ." ". menu ." ". content ." ". footer .";
-  margin: 0 8px;
+  /* margin: 0 8px; */
 }
 
-body p,
-body ul {
+#gatsby-focus-wrapper p,
+#gatsby-focus-wrapper ul {
   line-height: 1.1;
 }
 
 @media (min-width: 520px) {
-  body {
+  #gatsby-focus-wrapper {
     grid-template-columns: 1fr 520px 1fr;
   }
 }

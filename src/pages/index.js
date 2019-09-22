@@ -1,14 +1,19 @@
-import React from "react"
+import React, {useEffect} from "react"
 import { Link } from "gatsby"
+import typing from '../utils/typing';
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const IndexPage = () => (
+const IndexPage = () => {
+  useEffect(() => {
+    typing('terminal-line');
+  }, []);
+
+  return (
   <Layout>
     <SEO title="Home" />
 
-    <main className="content">
       <article className="gospel">
         <h2 id="terminal-line" className="hidden">
           Heaven or Hell, where will you spend etenity?
@@ -92,8 +97,7 @@ const IndexPage = () => (
           God bless you.
         </p>
       </article>
-    </main>
   </Layout>
-)
+)};
 
 export default IndexPage
