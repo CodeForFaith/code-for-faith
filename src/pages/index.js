@@ -1,5 +1,4 @@
 import React, {useEffect} from "react"
-import { Link } from "gatsby"
 import typing from '../utils/typing';
 
 import Layout from "../components/layout"
@@ -13,7 +12,6 @@ const IndexPage = () => {
   return (
   <Layout>
     <SEO title="Home" />
-
       <article className="gospel">
         <h2 id="terminal-line" className="hidden">
           Heaven or Hell, where will you spend etenity?
