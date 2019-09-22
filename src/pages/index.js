@@ -2,40 +2,12 @@ import React from "react"
 import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
 
-    <header className="header">
-      <div className="cross">
-        _|_
-        <br />
-        &nbsp;|
-        <br />
-      </div>
-      <div className="code">Code</div>
-      <div className="for">for</div>
-      <div className="faith">faith</div>
-    </header>
-    <nav className="menu">
-      <ul>
-        <li>
-          <a href="/">home</a>
-        </li>
-        <li>
-          <a href="/updates.html">updates</a>
-        </li>
-        <li>
-          <a href="/resources.html">resources</a>
-        </li>
-        <li>
-          <a href="/contact.html">contact</a>
-        </li>
-      </ul>
-    </nav>
     <main className="content">
       <article className="gospel">
         <h2 id="terminal-line" className="hidden">
@@ -121,112 +93,6 @@ const IndexPage = () => (
         </p>
       </article>
     </main>
-
-    <footer className="footer">
-      <nav className="menu">
-        <ul>
-          <li>
-            <a href="/contact.html" title="Contact">
-              <span
-                className="iconify"
-                data-icon="feather:mail"
-                data-inline="false"
-              ></span>
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://github.com/CodeForFaith"
-              title="GitHub"
-              target="_blank"
-            >
-              <span
-                className="iconify"
-                data-icon="feather-github"
-                data-inline="false"
-              ></span>
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.youtube.com/channel/UCxay0Nei9z7GKbaqXQSoaSg"
-              title="YouTube"
-              target="_blank"
-            >
-              <span
-                className="iconify"
-                data-icon="feather-youtube"
-                data-inline="false"
-              ></span>
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://twitter.com/CodeForFaith"
-              title="Twitter"
-              target="_blank"
-            >
-              <span
-                className="iconify"
-                data-icon="feather-twitter"
-                data-inline="false"
-              ></span>
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://codepen.io/CodeForFaith"
-              title="CodePen"
-              target="_blank"
-            >
-              <span
-                className="iconify"
-                data-icon="feather:codepen"
-                data-inline="false"
-              ></span>
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://soundcloud.com/code-for-faith"
-              title="SoundCloud"
-              target="_blank"
-            >
-              <span
-                className="iconify"
-                data-icon="feather:cloud"
-                data-inline="false"
-              ></span>
-            </a>
-          </li>
-          <li>
-            <a href="/qr.html" title="QR Code">
-              <span
-                className="iconify"
-                data-icon="feather:cpu"
-                data-inline="false"
-              ></span>
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://codesandbox.io/u/CodeForFaith"
-              title="CodeSandbox"
-              target="_blank"
-            >
-              <span
-                className="iconify"
-                data-icon="feather-codesandbox"
-                data-inline="false"
-              ></span>
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <div>Code for Faith &copy; 2019</div>
-    </footer>
-
-    <script src="scripts/typing.js"></script>
   </Layout>
 )
 
