@@ -1,19 +1,24 @@
-import React, {useEffect} from "react"
-import typing from '../utils/typing';
+import React, { useEffect } from "react"
+import typing from "../utils/typing"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
+let isLanding = true
+
 const IndexPage = () => {
   useEffect(() => {
-    typing('terminal-line');
-  }, []);
+    if (isLanding === true) {
+      typing("terminal-line")
+      isLanding = false
+    }
+  }, [])
 
   return (
-  <Layout>
-    <SEO title="Home" />
+    <Layout>
+      <SEO title="Home" />
       <article className="gospel">
-        <h2 id="terminal-line" className="hidden">
+        <h2 id="terminal-line" className={`${isLanding === true && "hidden"}`}>
           Heaven or Hell, where will you spend etenity?
         </h2>
         <div id="cursor-line" className="visible"></div>
@@ -95,7 +100,8 @@ const IndexPage = () => {
           God bless you.
         </p>
       </article>
-  </Layout>
-)};
+    </Layout>
+  )
+}
 
 export default IndexPage
