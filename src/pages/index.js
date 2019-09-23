@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"
+import React, { useEffect, useRef } from "react"
 import typing from "../utils/typing"
 
 import Layout from "../components/layout"
@@ -7,8 +7,10 @@ import SEO from "../components/seo"
 let isLanding = true
 
 const IndexPage = () => {
+  const terminalLineRef = useRef()
+  console.log(terminalLineRef)
   useEffect(() => {
-    if (isLanding === true) {
+    if (isLanding === true && terminalLineRef.current !== null) {
       typing("terminal-line")
       isLanding = false
     }
@@ -18,7 +20,11 @@ const IndexPage = () => {
     <Layout>
       <SEO title="Home" />
       <article className="gospel">
-        <h2 id="terminal-line" className={`${isLanding === true && "hidden"}`}>
+        <h2
+          id="terminal-line"
+          ref={terminalLineRef}
+          className={`${isLanding === true && "hidden"}`}
+        >
           Heaven or Hell, where will you spend etenity?
         </h2>
         <div id="cursor-line" className="visible"></div>
