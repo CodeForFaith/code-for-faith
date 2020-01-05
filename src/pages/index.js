@@ -1,21 +1,30 @@
-import React, {useEffect} from "react"
-import typing from '../utils/typing';
+import React, { useEffect, useRef } from "react"
+import typing from "../utils/typing"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
+let isLanding = true
+
 const IndexPage = () => {
+  const terminalLineRef = useRef()
+  console.log(terminalLineRef)
   useEffect(() => {
-    typing('terminal-line');
-    if(document.getElementById('terminal-line').length > 0) {
+    if (isLanding === true && terminalLineRef.current !== null) {
+      typing("terminal-line")
+      isLanding = false
     }
-  }, []);
+  }, [])
 
   return (
-  <Layout>
-    <SEO title="Home" />
+    <Layout>
+      <SEO title="Home" />
       <article className="gospel">
-        <h2 id="terminal-line" className="hidden">
+        <h2
+          id="terminal-line"
+          ref={terminalLineRef}
+          className={`${isLanding === true && "hidden"}`}
+        >
           Heaven or Hell, where will you spend etenity?
         </h2>
         <div id="cursor-line" className="visible"></div>
@@ -97,7 +106,8 @@ const IndexPage = () => {
           God bless you.
         </p>
       </article>
-  </Layout>
-)};
+    </Layout>
+  )
+}
 
 export default IndexPage
