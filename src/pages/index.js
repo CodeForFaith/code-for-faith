@@ -7,6 +7,8 @@ import SEO from "../components/seo"
 const IndexPage = () => {
   useEffect(() => {
     typing('terminal-line');
+    if(document.getElementById('terminal-line').length > 0) {
+    }
   }, []);
 
   return (
