@@ -10,6 +10,19 @@ const UpdatesPage = () => {
     <SEO title="Updates" />
     <article class="update">
               <p>
+                  date: 01/16/2020<br/>
+                  title: v0.7.0
+              </p>
+              <p>
+                <a href="https://codeforfaith.com">website</a> updates:<br/>
+                <ul>
+                  <li>add privacy policy page v0.1.0</li>
+                </ul>
+              </p>
+              <hr/>
+            </article>
+    <article class="update">
+              <p>
                   date: 09/15/2019<br/>
                   title: v0.0.3
               </p>
