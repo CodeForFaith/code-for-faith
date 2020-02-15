@@ -19,3 +19,5 @@
 - [ ] make death count yer and death count since page loaded dynamic on front page
 - [ ] do french translation of homepage
 - [ ] remove unused icon from footer
+- [ ] change website title
+- [ ] remake favicon design to make it more visible
