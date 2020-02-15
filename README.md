@@ -21,3 +21,4 @@
 - [ ] remove unused icon from footer
 - [ ] change website title
 - [ ] remake favicon design to make it more visible
+- [ ] setup contact@codeforfaith.com email
