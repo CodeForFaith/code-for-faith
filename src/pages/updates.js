@@ -7,7 +7,7 @@ const UpdatesPage = () => {
   return (
     <Layout>
       <SEO title="Updates" />
-      <article class="update">
+      <article className="update">
         <p>
           date: 04/04/2020
           <br />
@@ -22,11 +22,12 @@ const UpdatesPage = () => {
             <li>update ministries list</li>
             <li>add GDPR banner</li>
             <li>update icons footer</li>
+            <li>update readme</li>
           </ul>
         </p>
         <hr />
       </article>
-      <article class="update">
+      <article className="update">
         <p>
           date: 01/16/2020
           <br />
@@ -41,7 +42,7 @@ const UpdatesPage = () => {
         </p>
         <hr />
       </article>
-      <article class="update">
+      <article className="update">
         <p>
           date: 09/15/2019
           <br />
@@ -58,7 +59,7 @@ const UpdatesPage = () => {
         </p>
         <hr />
       </article>
-      <article class="update">
+      <article className="update">
         <p>
           date: 09/15/2019
           <br />
@@ -74,7 +75,7 @@ const UpdatesPage = () => {
         </p>
         <hr />
       </article>
-      <article class="update">
+      <article className="update">
         <p>
           date: 09/06/2019
           <br />
@@ -93,7 +94,7 @@ const UpdatesPage = () => {
         </p>
         <hr />
       </article>
-      <article class="update">
+      <article className="update">
         <p>
           date: 09/04/2019
           <br />
@@ -114,7 +115,7 @@ const UpdatesPage = () => {
         </p>
         <hr />
       </article>
-      <article class="update">
+      <article className="update">
         <p>
           date: 09/03/2019
           <br />
@@ -136,7 +137,7 @@ const UpdatesPage = () => {
         </p>
         <hr />
       </article>
-      <article class="update">
+      <article className="update">
         <p>
           date: 09/02/2019
           <br />
@@ -153,7 +154,7 @@ const UpdatesPage = () => {
         </p>
         <hr />
       </article>
-      <article class="update">
+      <article className="update">
         <p>
           date: 09/01/2019
           <br />
