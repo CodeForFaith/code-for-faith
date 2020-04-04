@@ -95,6 +95,19 @@ const ResourcesPage = () => {
         <div className="title">Ministries:</div>
         <ul>
           <li>
+            Revelations of Jesus Christ
+            <a href="https://theghettogospel.com/home/" target="_blank">
+              Website
+            </a>
+            &nbsp;|&nbsp;
+            <a
+              href="https://www.youtube.com/user/theghettogospelteam"
+              target="_blank"
+            >
+              YouTube
+            </a>
+          </li>
+          <li>
             Faith Comes By Hearing:
             <a href="https://www.faithcomesbyhearing.com/" target="_blank"
               >Website</a
