@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `CodeForFaith.com`,
+    title: `CodeForFaith`,
     description: `Official CodeForFaith website`,
     author: `CodeForFaith`,
   },

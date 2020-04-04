@@ -11,6 +11,21 @@ const UpdatesPage = () => {
         <p>
           date: 04/04/2020
           <br />
+          title: v1.0.0
+        </p>
+        <p>
+          <a href="https://codeforfaith.com">website</a> updates:
+          <br />
+          <ul>
+            <li>v1.0.0 is live!</li>
+          </ul>
+        </p>
+        <hr />
+      </article>
+      <article className="update">
+        <p>
+          date: 04/04/2020
+          <br />
           title: v0.8.0
         </p>
         <p>
