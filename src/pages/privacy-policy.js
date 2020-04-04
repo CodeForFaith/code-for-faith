@@ -13,7 +13,7 @@ const PrivacyPolicyPage = () => {
       <SEO title="Privacy Policy" />
       <article className="privacy-policy">
         <h1>Code for Faith Privicy Policy</h1>
-        <h2>16th of January 2020 (version 0.1.0)</h2>
+        <h2>4th of April 2020 (version 0.1.1)</h2>
         <p>This privacy notice tells you about the information we collect from you when you use our website. In collecting this information, we are acting as a data controller and, by law, we are required to provide you with information about us, about why and how we use your data, and about the rights you have over your data.</p>
         <h2>Who are we?</h2>
         <p>We are Code for Faith. You can contact us by email at <a href="mailto:codeforfaith@gmail.com">codeforfaith@gmail.com</a>.</p>
@@ -29,7 +29,8 @@ const PrivacyPolicyPage = () => {
         <p>When you use our website we do not collect any data from you without your consent. We are not tracking you or using any third party service such as Google Analytics. And we are not going to share or sell your data.</p>
         <p>However we may collect personal information from you such as your name or email address. For example, you may voluntarily contact us by email at <a href="mailto:codeforfaith@gmail.com">codeforfaith@gmail.com</a>.</p>
         <p>Through this website you are able to link to other websites which are not under the control of codeforfaith.com. We have no control over the nature, content and availability of those sites. The inclusion of any links does not necessarily imply a recommendation or endorse the views expressed within them.</p>
-        <p>The only cookies that we use are strictly necessary. For more information about our use of cookies, please see our <a href="/cookie-policy">cookie policy</a>.</p>
+        <p>We do not use any cookies to run this website.</p>
+        {/* <p>The only cookies that we use are strictly necessary. For more information about our use of cookies, please see our <a href="/cookie-policy">cookie policy</a>.</p> */}
         
         <h2 name="your-rights-as-a-data-subject">Your rights as a data subject</h2>
         <p>The following section will detail your rights as a data subject (someone using our website). Here is what you can require of us concerning your data:</p>
