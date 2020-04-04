@@ -39,8 +39,12 @@ const typing = id => {
 
     // show cursor on next line
     const totalTime = fullText.length * timeChar + timeChar
+    // prettier-ignore
+    console.log('crlntn -- typing.js fullText',fullText)
     showCursor = setTimeout(() => {
-      document.getElementById("cursor-line").className = "visible"
+      if (document.getElementById("cursor-line") !== null) {
+        document.getElementById("cursor-line").className = "visible"
+      }
     }, totalTime)
   }
 
