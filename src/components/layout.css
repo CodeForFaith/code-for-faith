@@ -107,6 +107,23 @@ body {
   text-align: center;
 }
 
+.nav-link {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-link-white {
+  color: black;
+  background: white;
+  text-decoration: none;
+}
+
+.nav-link-white:hover {
+  color: white;
+  background: black;
+  text-decoration: underline;
+}
+
 .footer {
   grid-area: footer;
   display: flex;
@@ -117,6 +134,26 @@ body {
 
 .footer .menu ul {
   margin: 0;
+}
+
+.gdpr-banner {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  align-items: center;
+  background: black;
+}
+
+.gdpr-banner.visible {
+  display: flex;
+  justify-content: center;
+}
+
+.gdpr-banner .button {
+  margin-left: 5px;
+  cursor: pointer;
 }
 
 /*typing cursor*/
