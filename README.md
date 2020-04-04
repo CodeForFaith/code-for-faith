@@ -10,7 +10,7 @@
 - [ ] add apps page
 - [x] migrate to [GatsbyJS](https://www.gatsbyjs.org/)
 - [x] add CodePen icon to the footer links (https://codepen.io/CodeForFaith)
-- [ ] make website GDPR compliant
+- [x] make website GDPR compliant
 - [ ] fix fatal errors
 - [ ] organize pages data the Gatsby way
 - [ ] study GraphQl
