@@ -124,6 +124,18 @@ body {
   text-decoration: underline;
 }
 
+.nav-link-black {
+  color: white;
+  background: black;
+  text-decoration: none;
+}
+
+.nav-link-black:hover {
+  color: black;
+  background: white;
+  text-decoration: underline;
+}
+
 .footer {
   grid-area: footer;
   display: flex;
@@ -138,12 +150,14 @@ body {
 
 .gdpr-banner {
   display: none;
+  padding: 1px 0;
   position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
   align-items: center;
-  background: black;
+  background: #ffffff;
+  color: #000000;
 }
 
 .gdpr-banner.visible {

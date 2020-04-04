@@ -24,7 +24,7 @@ const GDPRBanner = () => {
         read our{" "}
         <Link
           to={`privacy-policy`}
-          className={`nav-link-white`}
+          className={`nav-link-black`}
           onClick={() => handleIsVisible()}
         >
           privacy policy
@@ -32,7 +32,7 @@ const GDPRBanner = () => {
         .
       </div>
       <div
-        className={`nav-link-white button`}
+        className={`nav-link-black button`}
         onClick={() => handleIsVisible()}
       >
         ok
