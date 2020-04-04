@@ -30,7 +30,7 @@
   ],
   "license": "MIT",
   "scripts": {
-    "build": "gatsby build && gh-pages -d public -b gh-pages",
+    "build": "gatsby build && rm -rf node_modules/gh-pages/.cache && gh-pages -d public -b gh-pages",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
