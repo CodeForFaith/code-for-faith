@@ -15,7 +15,7 @@ body {
   grid-template-columns: 0 1fr 0;
   grid-template-rows: 150px 50px 1fr 40px;
   grid-template-areas: ". header ." ". menu ." ". content ." ". footer .";
-  /* margin: 0 8px; */
+  padding: 0 5px;
 }
 
 #gatsby-focus-wrapper p,
@@ -26,6 +26,7 @@ body {
 @media (min-width: 520px) {
   #gatsby-focus-wrapper {
     grid-template-columns: 1fr 520px 1fr;
+    padding: 0;
   }
 }
 
@@ -150,7 +151,7 @@ body {
 
 .gdpr-banner {
   display: none;
-  padding: 1px 0;
+  padding: 1px 5px;
   position: fixed;
   bottom: 0;
   left: 0;
