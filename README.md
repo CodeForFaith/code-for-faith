@@ -23,3 +23,4 @@
 - [ ] remake favicon design to make it more visible
 - [ ] setup contact@codeforfaith.com email
 - [ ] fix responsive (add margin on the sides)
+- [ ] fix links in the footer
