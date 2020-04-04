@@ -3,28 +3,18 @@ import React, { useState, useContext, useEffect } from "react"
 import { Link } from "gatsby"
 import Context from "../context/context"
 
-const GDPRBanner = props => {
-  // prettier-ignore
-  console.log('crlntn -- gdpr-banner.js props',props)
+const GDPRBanner = () => {
   const { state, setState } = useContext(Context)
   const [isVisible, setIsVisible] = useState(state.layout.GDPRBanner.isVisible)
 
   useEffect(() => {
-    // prettier-ignore
-    console.log('crlntn -- gdpr-banner.js state',state)
     setIsVisible(state.layout.GDPRBanner.isVisible)
   }, [state])
 
   const handleIsVisible = () => {
     const tempState = state
     tempState.layout.GDPRBanner.isVisible = false
-    // prettier-ignore
-    console.log('crlntn -- gdpr-banner.js tempState',tempState)
     setState({ ...tempState })
-    // setState({
-    //   ...state,
-    //   state: { layout: { GDPRBanner: { isVisible: false } } },
-    // })
   }
 
   return (
