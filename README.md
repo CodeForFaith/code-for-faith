@@ -18,9 +18,9 @@
 - [ ] error/info logging
 - [ ] make death count yer and death count since page loaded dynamic on front page
 - [ ] do french translation of homepage
-- [ ] remove unused icon from footer
+- [x] remove unused icon from footer
 - [x] change website title
 - [ ] remake favicon design to make it more visible
 - [ ] setup contact@codeforfaith.com email
 - [x] fix responsive (add margin on the sides)
-- [ ] fix links in the footer
+- [x] fix links in the footer
