@@ -9,7 +9,7 @@ const ContactPage = () => {
   <Layout>
     <SEO title="Contact" />
     <article className="contact">
-        <p>Email: <a href="mailto:codeforfaith@gmail.com">codeforfaith@gmail.com</a></p>
+        <p>Email: <a href="mailto:contact@codeforfaith.com">contact@codeforfaith.com</a></p>
       </article>
   </Layout>
 )};

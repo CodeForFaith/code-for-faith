@@ -8,8 +8,6 @@
 
 ## Todo:
 - [ ] add apps page
-- [x] migrate to [GatsbyJS](https://www.gatsbyjs.org/)
-- [x] add CodePen icon to the footer links (https://codepen.io/CodeForFaith)
 - [x] make website GDPR compliant
 - [x] fix fatal errors
 - [ ] organize pages data the Gatsby way
@@ -18,9 +16,7 @@
 - [ ] error/info logging
 - [ ] make death count yer and death count since page loaded dynamic on front page
 - [ ] do french translation of homepage
-- [x] remove unused icon from footer
-- [x] change website title
 - [ ] remake favicon design to make it more visible
-- [ ] setup contact@codeforfaith.com email
+- [x] setup contact@codeforfaith.com email
 - [x] fix responsive (add margin on the sides)
 - [x] fix links in the footer
