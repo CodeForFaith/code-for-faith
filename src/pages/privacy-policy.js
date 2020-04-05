@@ -13,7 +13,7 @@ const PrivacyPolicyPage = () => {
       <SEO title="Privacy Policy" />
       <article className="privacy-policy">
         <h1>Code for Faith Privicy Policy</h1>
-        <h2>4th of April 2020 (version 0.1.1)</h2>
+        <h2>5th of April 2020 (version 0.2.0)</h2>
         <p>This privacy notice tells you about the information we collect from you when you use our website. In collecting this information, we are acting as a data controller and, by law, we are required to provide you with information about us, about why and how we use your data, and about the rights you have over your data.</p>
         <h2>Who are we?</h2>
         <p>We are Code for Faith. You can contact us by email at <a href="mailto:contact@codeforfaith.com">contact@codeforfaith.com</a>.</p>
