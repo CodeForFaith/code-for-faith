@@ -83,7 +83,7 @@ const Footer = () => (
       </ul>
     </nav>
     <div>
-      Code for Faith &copy; 2019 -{" "}
+      Code for Faith &copy; {new Date().getFullYear()} -{" "}
       <Link to={"/privacy-policy"} className={"nav-link"}>
         privacy policy
       </Link>
