@@ -1,10 +1,12 @@
-<h1>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_|_<br>
-&nbsp;Code&nbsp;|&nbsp;Faith<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for
-</h1>
+<p align="center">
+  <h1>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_|_<br>
+  &nbsp;Code&nbsp;|&nbsp;Faith<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for
+  </h1>
 
-[https://CodeForFaith.com](https://codeforfaith.com)
+  [https://CodeForFaith.com](https://codeforfaith.com)
+</p>
 
 ## Todo:
 - [ ] add apps page
