@@ -1,11 +1,10 @@
+<h1 align="center">
+_|_<br>
+Code&nbsp;|&nbsp;Faith<br>
+for
+</h1>
 <p align="center">
-  <h1>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_|_<br>
-  &nbsp;Code&nbsp;|&nbsp;Faith<br>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for
-  </h1>
-
-  [https://CodeForFaith.com](https://codeforfaith.com)
+  <a href="https://codeforfaith.com" target="_blank">CodeForFaith.com</a>
 </p>
 
 ## Todo:
