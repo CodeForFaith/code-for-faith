@@ -41,21 +41,6 @@ const UpdatesPage = ({ data }) => {
         ))}
       <article className="update">
         <p>
-          date: 05/26/2020
-          <br />
-          title: v0.0.3
-        </p>
-        <p>
-          <a href="https://pypi.org/project/gospel/">gospel</a> updates:
-          <br />
-          <ul>
-            <li>create a gospel cli app</li>
-          </ul>
-        </p>
-        <hr />
-      </article>
-      <article className="update">
-        <p>
           date: 05/04/2020
           <br />
           title: v1.1.0
