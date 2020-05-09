@@ -13,7 +13,7 @@ const Header = ({ siteTitle }) => (
       </div>
       <div className="code">Code</div>
       <div className="for">for</div>
-      <div className="faith">faith</div>
+      <div className="faith">Faith</div>
     </header>
     <nav className="menu">
       <ul>
