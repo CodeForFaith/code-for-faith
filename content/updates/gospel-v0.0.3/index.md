@@ -1,6 +1,6 @@
 ---
 title: gospel v0.0.3
-date: 2020-05-26 
+date: 2020-04-26 
 type: update
 ---
 
