@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[5],{"Cuy+":function(e,a,t){"use strict";t.r(a);var c=t("q1tI"),n=t.n(c),l=t("Bl7J"),o=t("vrFN");a.default=function(){return n.a.createElement(l.a,null,n.a.createElement(o.a,{title:"Contact"}),n.a.createElement("article",{className:"contact"},n.a.createElement("p",null,"Email: ",n.a.createElement("a",{href:"mailto:codeforfaith@gmail.com"},"codeforfaith@gmail.com"))))}}}]);
-//# sourceMappingURL=component---src-pages-contact-js-3e4e1b049c394c27b337.js.map
