@@ -6,16 +6,16 @@ import SEO from "../components/seo"
 
 export const query = graphql`
   query UpdatesPageQuery {
-    allMarkdownRemark {
+    allMarkdownRemark(sort: { fields: frontmatter___date, order: DESC }) {
       edges {
         node {
+          html
+          id
           frontmatter {
             date(formatString: "MM/DD/YYYY")
             title
             type
           }
-          html
-          id
         }
       }
     }
