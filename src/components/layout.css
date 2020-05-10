@@ -13,9 +13,9 @@ body {
   text-align: justify;
   display: grid;
   grid-template-columns: 0 1fr 0;
-  grid-template-rows: 150px 50px 1fr 40px;
-  grid-template-areas: ". header ." ". menu ." ". content ." ". footer .";
-  padding: 0 5px;
+  grid-template-rows: 24px 126px 50px 1fr 40px;
+  grid-template-areas: ". languages ." ". header ." ". menu ." ". content ." ". footer .";
+  padding: 0 8px;
 }
 
 #gatsby-focus-wrapper p,
@@ -28,6 +28,12 @@ body {
     grid-template-columns: 1fr 520px 1fr;
     padding: 0;
   }
+}
+
+.languages {
+  grid-area: languages;
+  margin-top: 8px;
+  text-align: right;
 }
 
 .header {
@@ -108,7 +114,12 @@ body {
   text-align: center;
 }
 
+.underline {
+  text-decoration: underline !important;
+}
+
 .nav-link {
+  cursor: pointer;
   color: white;
   text-decoration: none;
 }
@@ -155,7 +166,7 @@ body {
 
 .gdpr-banner {
   display: none;
-  padding: 1px 5px;
+  padding: 1px 8px;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -171,7 +182,7 @@ body {
 }
 
 .gdpr-banner .button {
-  margin-left: 5px;
+  margin-left: 8px;
   cursor: pointer;
 }
 
