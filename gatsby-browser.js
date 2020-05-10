@@ -4,4 +4,10 @@
  * See: https://www.gatsbyjs.org/docs/browser-apis/
  */
 
-// You can delete this file if you're not using it
+// gatsby-browser.js
+import React from "react"
+import { ContextProvider } from "./src/context/context"
+
+export const wrapRootElement = ({ element }) => {
+  return <ContextProvider>{element}</ContextProvider>
+}

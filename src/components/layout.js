@@ -8,7 +8,6 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-import { ContextProvider } from "../context/context"
 
 import Header from "./header"
 import Footer from "./footer"
@@ -27,12 +26,12 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <ContextProvider>
+    <>
       <Header siteTitle={data.site.siteMetadata.title} />
       <main className="content">{children}</main>
       <Footer />
       <GDPRBanner />
-    </ContextProvider>
+    </>
   )
 }
 
