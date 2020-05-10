@@ -7,14 +7,14 @@ type: "home"
 The Bible says there is only one way to Heaven.
 
 Jesus Christ said:
-<span className="verse">
+<span class="verse">
   "I am the way, the truth, and the life: no man cometh unto the
   Father, but by me." (John 14:6)
 </span>
 
 The Bible also says that none of us are good enough to go to Heaven.
 
-<span className="verse">
+<span class="verse">
   "For all have sinned, and come short of the glory of God;" (Romans
   3:23)
 </span>
@@ -27,7 +27,7 @@ murder in God's eyes), then you have sinned.
 This means that by default, we are all heading for Hell. An eternity
 of fiery torments.
 
-<span className="verse">
+<span class="verse">
   "Marvel not at this: for the hour is coming, in the which all that
   are in the graves shall hear his voice, And shall come forth; they
   that have done good, unto the resurrection of life; and they that
@@ -45,7 +45,7 @@ He then raised bodily on the third day, defeating death. He now has
 legally the right to forgive us our sins. Through Him we can live
 forever in His kingdom.
 
-<span className="verse">
+<span class="verse">
   "For God so loved the world, that he gave his only begotten Son,
   that whosoever believeth in him should not perish, but have
   everlasting life." (John 3:16)
@@ -62,7 +62,7 @@ You can be saved right now.
 If you repent of your sins (say sorry to God and stop sinning) and
 make Jesus Christ your Lord and Savior you will be saved.
 
-<span className="verse">
+<span class="verse">
   "That if thou shalt confess with thy mouth the Lord Jesus, and shalt
   believe in thine heart that God hath raised him from the dead, thou
   shalt be saved." (Romans 10:9)
