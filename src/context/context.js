@@ -2,6 +2,7 @@ import React, { createContext, useState } from "react"
 import PropTypes from "prop-types"
 
 const context = {
+  language: 'en',
   layout: {
     GDPRBanner: {
       isVisible: true,
