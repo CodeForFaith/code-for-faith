@@ -1,4 +1,5 @@
-import React, { useEffect, useRef } from "react"
+import React, { useState, useContext, useEffect, useRef } from "react"
+import Context from "../context/context"
 import { graphql } from "gatsby"
 import typing from "../utils/typing"
 
@@ -12,13 +13,13 @@ export const query = graphql`
     allMarkdownRemark {
       edges {
         node {
+          id
+          html
           frontmatter {
             title
             language
             type
           }
-          html
-          id
         }
       }
     }
@@ -27,13 +28,19 @@ export const query = graphql`
 
 const IndexPage = ({ data }) => {
   const terminalLineRef = useRef()
-  console.log(terminalLineRef)
+  const { state, setState } = useContext(Context)
+  const [language, setLanguage] = useState("en")
+
   useEffect(() => {
     if (isLanding === true && terminalLineRef.current !== null) {
       typing("terminal-line")
       isLanding = false
     }
   }, [])
+
+  useEffect(() => {
+    setLanguage(state.language)
+  }, [state])
 
   return (
     <Layout>
@@ -43,7 +50,7 @@ const IndexPage = ({ data }) => {
           .filter(
             edge =>
               edge.node.frontmatter.type === "home" &&
-              edge.node.frontmatter.language === "en"
+              edge.node.frontmatter.language === language
           )
           .map(edge => (
             <>
@@ -52,7 +59,7 @@ const IndexPage = ({ data }) => {
                 ref={terminalLineRef}
                 className={`${isLanding === true && "hidden"}`}
               >
-                Heaven or Hell, where will you spend etenity?
+                {edge.node.frontmatter.title}
               </h2>
               <div id="cursor-line" className="visible"></div>
               <div dangerouslySetInnerHTML={{ __html: edge.node.html }} />
