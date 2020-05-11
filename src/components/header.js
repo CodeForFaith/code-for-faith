@@ -1,6 +1,6 @@
 import { Link } from "gatsby"
 // import PropTypes from "prop-types"
-import React, { useContext } from "react"
+import React, { useContext, useEffect } from "react"
 import Context from "../context/context"
 
 const Header = ({ siteTitle }) => {
@@ -9,6 +9,13 @@ const Header = ({ siteTitle }) => {
   const onClickLanguage = language => {
     setState({ ...state, language })
   }
+
+  useEffect(() => {
+    const navigatorLanguage = navigator.language
+    if (navigator.language === "fr") {
+      setState({ ...state, language: navigatorLanguage })
+    }
+  }, [])
 
   return (
     <>
