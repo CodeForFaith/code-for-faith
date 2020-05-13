@@ -1,12 +1,13 @@
 import React, { useState, useContext, useEffect, useRef } from "react"
 import Context from "../context/context"
 import { graphql } from "gatsby"
-import typing from "../utils/typing"
+// import TypeIt from "typeit-react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 let isLanding = true
+let typingCount = 0
 
 export const query = graphql`
   query HomePageQuery {
@@ -27,19 +28,22 @@ export const query = graphql`
 `
 
 const IndexPage = ({ data }) => {
-  const terminalLineRef = useRef()
   const { state, setState } = useContext(Context)
   const [language, setLanguage] = useState("en")
-
-  useEffect(() => {
-    if (isLanding === true && terminalLineRef.current !== null) {
-      typing("terminal-line")
-      isLanding = false
-    }
-  }, [])
+  // const [instance, setInstance] = useState(null)
 
   useEffect(() => {
     setLanguage(state.language)
+    // if (instance !== null) {
+    //   // instance.start()
+    //   // instance.destroy()
+    //   // instance.delete()
+    //   instance.reset()
+    //   // instance.empty()
+    //   // instance.options({texts: ['test']}).go()
+    //   // instance.type("test")
+    //   instance.go()
+    // }
   }, [state])
 
   return (
@@ -54,14 +58,17 @@ const IndexPage = ({ data }) => {
           )
           .map(edge => (
             <>
-              <h2
-                id="terminal-line"
-                ref={terminalLineRef}
-                className={`${isLanding === true && "hidden"}`}
-              >
-                {edge.node.frontmatter.title}
-              </h2>
-              <div id="cursor-line" className="visible"></div>
+              {/* <TypeIt */}
+              {/*   element={"h2"} */}
+              {/*   options={{ cursorChar: " &#9608;", startDelete: true }} */}
+              {/*   getBeforeInit={instance => { */}
+              {/*     setInstance(instance) */}
+              {/*     return instance */}
+              {/*   }} */}
+              {/* > */}
+              {/*   {edge.node.frontmatter.title} */}
+              {/* </TypeIt> */}
+              <h2>{edge.node.frontmatter.title}</h2>
               <div dangerouslySetInnerHTML={{ __html: edge.node.html }} />
             </>
           ))}
