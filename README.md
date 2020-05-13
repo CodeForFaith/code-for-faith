@@ -18,3 +18,4 @@ for
 - [ ] do french translation of homepage
 - [ ] remake favicon design to make it more visible
 - [ ] redirect all http trafic to https
+- [ ] restore the title typing animation
