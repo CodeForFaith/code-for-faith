@@ -6,8 +6,8 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-let isLanding = true
-let typingCount = 0
+// let isLanding = true
+// let typingCount = 0
 
 export const query = graphql`
   query HomePageQuery {
