@@ -1,5 +1,5 @@
 ---
-title: "Heaven or Hell, where will you spend etenity?"
+title: "Heaven or Hell, where will you spend eternity?"
 language: "en"
 type: "home"
 ---
