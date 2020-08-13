@@ -1,31 +1,33 @@
 import React, { useState, useContext, useEffect } from "react"
 // import PropTypes from "prop-types"
 import { Link } from "gatsby"
-import Context from "../context/context"
+import { StateContext, DispatchContext } from "../context/context-provider"
 
 const GDPRBanner = () => {
-  const { state, setState } = useContext(Context)
-  const [isVisible, setIsVisible] = useState(state.layout.GDPRBanner.isVisible)
+  const state = useContext(StateContext)
+  const dispatch = useContext(DispatchContext)
 
-  useEffect(() => {
-    setIsVisible(state.layout.GDPRBanner.isVisible)
-  }, [state])
+  // useEffect(() => {
+  //   setIsVisible(state.layout.GDPRBanner.isVisible)
+  // }, [state])
 
-  const handleIsVisible = () => {
-    const tempState = state
-    tempState.layout.GDPRBanner.isVisible = false
-    setState({ ...tempState })
+  const handleIsVisible = (payload) => {
+    dispatch({type: 'toggle-isGDPRBannerVisible', payload})
   }
 
   return (
-    <div className={`gdpr-banner ${isVisible === true ? "visible" : ""}`}>
+    <div
+      className={`gdpr-banner ${
+        state.isGDPRBannerVisible === true ? "visible" : ""
+      }`}
+    >
       <div>
         We do not use any cookies on this website. For more information, please
         read our{" "}
         <Link
           to={`privacy-policy`}
           className={`nav-link-black`}
-          onClick={() => handleIsVisible()}
+          onClick={() => handleIsVisible(false)}
         >
           privacy policy
         </Link>
@@ -33,7 +35,7 @@ const GDPRBanner = () => {
       </div>
       <div
         className={`nav-link-black button`}
-        onClick={() => handleIsVisible()}
+          onClick={() => handleIsVisible(false)}
       >
         ok
       </div>

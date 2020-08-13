@@ -6,7 +6,7 @@
 
 // gatsby-browser.js
 import React from "react"
-import { ContextProvider } from "./src/context/context"
+import { ContextProvider } from "./src/context/context-provider"
 
 export const wrapRootElement = ({ element }) => {
   return <ContextProvider>{element}</ContextProvider>

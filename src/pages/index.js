@@ -1,5 +1,5 @@
 import React, { useState, useContext, useEffect, useRef } from "react"
-import Context from "../context/context"
+import { StateContext, DispatchContext } from "../context/context-provider"
 import { graphql } from "gatsby"
 // import TypeIt from "typeit-react"
 
@@ -28,12 +28,11 @@ export const query = graphql`
 `
 
 const IndexPage = ({ data }) => {
-  const { state, setState } = useContext(Context)
-  const [language, setLanguage] = useState("en")
+  const state = useContext(StateContext)
+  const dispatch = useContext(DispatchContext)
   // const [instance, setInstance] = useState(null)
 
   useEffect(() => {
-    setLanguage(state.language)
     // if (instance !== null) {
     //   // instance.start()
     //   // instance.destroy()
@@ -54,7 +53,7 @@ const IndexPage = ({ data }) => {
           .filter(
             edge =>
               edge.node.frontmatter.type === "home" &&
-              edge.node.frontmatter.language === language
+              edge.node.frontmatter.language === state.language
           )
           .map(edge => (
             <>
