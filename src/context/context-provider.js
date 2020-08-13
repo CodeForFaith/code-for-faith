@@ -1,17 +1,15 @@
 import React, { createContext, useReducer } from "react"
 import PropTypes from "prop-types"
 
-export const StateContext = createContext()
-export const DispatchContext = createContext()
-
 const initialState = {
   language: "en",
   isGDPRBannerVisible: true,
 }
 
+export const StateContext = createContext(initialState)
+export const DispatchContext = createContext()
+
 const reducer = (state, action) => {
-  // prettier-ignore
-  console.log('crlntn -- context-provider.js action',action)
   switch (action.type) {
     case "change-language": {
       return {
