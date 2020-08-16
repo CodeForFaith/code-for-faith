@@ -4,6 +4,7 @@ import PropTypes from "prop-types"
 const initialState = {
   language: "en",
   isGDPRBannerVisible: true,
+  isIndexPageTitleDoneTyping: false,
 }
 
 export const StateContext = createContext(initialState)
@@ -11,6 +12,12 @@ export const DispatchContext = createContext()
 
 const reducer = (state, action) => {
   switch (action.type) {
+    case "toggle-isIndexPageTitleDoneTyping": {
+      return {
+        ...state,
+        isIndexPageTitleDoneTyping: action.payload,
+      }
+    }
     case "change-language": {
       return {
         ...state,

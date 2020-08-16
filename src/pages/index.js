@@ -1,13 +1,10 @@
 import React, { useState, useContext, useEffect, useRef } from "react"
 import { StateContext, DispatchContext } from "../context/context-provider"
 import { graphql } from "gatsby"
-// import TypeIt from "typeit-react"
+import TypeIt from "typeit-react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-
-// let isLanding = true
-// let typingCount = 0
 
 export const query = graphql`
   query HomePageQuery {
@@ -27,23 +24,47 @@ export const query = graphql`
   }
 `
 
+const getPageContent = (data, language) => {
+  const strings = data.allMarkdownRemark.edges.filter(
+    edge =>
+      edge.node.frontmatter.type === "home" &&
+      edge.node.frontmatter.language === language
+  )[0].node
+
+  return strings
+}
+
 const IndexPage = ({ data }) => {
   const state = useContext(StateContext)
   const dispatch = useContext(DispatchContext)
-  // const [instance, setInstance] = useState(null)
+  const [instance, setInstance] = useState(null)
+  const [pageStrings, setPageStrings] = useState()
 
   useEffect(() => {
-    // if (instance !== null) {
-    //   // instance.start()
-    //   // instance.destroy()
-    //   // instance.delete()
-    //   instance.reset()
-    //   // instance.empty()
-    //   // instance.options({texts: ['test']}).go()
-    //   // instance.type("test")
-    //   instance.go()
-    // }
-  }, [state])
+    setPageStrings(getPageContent(data, state.language))
+    // eslint-disable-next-line
+  }, [state.language])
+
+  useEffect(() => {
+    if (instance !== null) {
+      const isCompletedInterval = setInterval(() => {
+        console.log("isCompletedInterval")
+        if (instance.is("completed")) {
+          setTimeout(() => {
+            instance.destroy()
+            dispatch({ type: "toggle-isIndexPageTitleDoneTyping", payload: true })
+            setInstance(null)
+          }, 3000)
+          clearInterval(isCompletedInterval)
+        }
+      }, 1000)
+
+      const pageTitle = pageStrings.frontmatter.title
+      instance.reset()
+      instance.type(pageTitle)
+      instance.go()
+    }
+  }, [pageStrings, instance])
 
   return (
     <Layout>
@@ -57,17 +78,26 @@ const IndexPage = ({ data }) => {
           )
           .map(edge => (
             <>
-              {/* <TypeIt */}
-              {/*   element={"h2"} */}
-              {/*   options={{ cursorChar: " &#9608;", startDelete: true }} */}
-              {/*   getBeforeInit={instance => { */}
-              {/*     setInstance(instance) */}
-              {/*     return instance */}
-              {/*   }} */}
-              {/* > */}
-              {/*   {edge.node.frontmatter.title} */}
-              {/* </TypeIt> */}
-              <h2>{edge.node.frontmatter.title}</h2>
+              {state.isIndexPageTitleDoneTyping === false ? (
+                <TypeIt
+                  element={"h2"}
+                  options={{
+                    cursorChar: " &#9608;",
+                  }}
+                  getAfterInit={instance => {
+                    setInstance(instance)
+                    return instance
+                  }}
+                />
+              ) : (
+                <h2
+                  dangerouslySetInnerHTML={{
+                    __html:
+                      edge.node.frontmatter.title +
+                      '<span style="visibility: hidden;">&#9608</span>',
+                  }}
+                />
+              )}
               <div dangerouslySetInnerHTML={{ __html: edge.node.html }} />
             </>
           ))}

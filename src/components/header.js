@@ -8,13 +8,18 @@ const Header = ({ siteTitle }) => {
   const dispatch = useContext(DispatchContext)
 
   const onClickLanguage = language => {
+    dispatch({ type: "toggle-isIndexPageTitleDoneTyping", payload: true })
     dispatch({ type: "change-language", payload: language })
+  }
+
+  const handleClickLink = () => {
+    dispatch({ type: "toggle-isIndexPageTitleDoneTyping", payload: true })
   }
 
   useEffect(() => {
     const navigatorLanguage = navigator.language
     if (navigatorLanguage === "fr") {
-    dispatch({ type: "change-language", payload: navigatorLanguage })
+      dispatch({ type: "change-language", payload: navigatorLanguage })
     }
   }, [])
 
@@ -52,13 +57,19 @@ const Header = ({ siteTitle }) => {
             <Link to="/">home</Link>
           </li>
           <li>
-            <Link to="/updates">updates</Link>
+            <Link to="/updates" onClick={() => handleClickLink()}>
+              updates
+            </Link>
           </li>
           <li>
-            <Link to="/resources">resources</Link>
+            <Link to="/resources" onClick={() => handleClickLink()}>
+              resources
+            </Link>
           </li>
           <li>
-            <Link to="/contact">contact</Link>
+            <Link to="/contact" onClick={() => handleClickLink()}>
+              contact
+            </Link>
           </li>
         </ul>
       </nav>
