@@ -48,7 +48,6 @@ const IndexPage = ({ data }) => {
   useEffect(() => {
     if (instance !== null) {
       const isCompletedInterval = setInterval(() => {
-        console.log("isCompletedInterval")
         if (instance.is("completed")) {
           setTimeout(() => {
             instance.destroy()
