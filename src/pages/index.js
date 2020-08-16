@@ -53,7 +53,7 @@ const IndexPage = ({ data }) => {
             instance.destroy()
             dispatch({ type: "toggle-isIndexPageTitleDoneTyping", payload: true })
             setInstance(null)
-          }, 3000)
+          }, 2700)
           clearInterval(isCompletedInterval)
         }
       }, 1000)
