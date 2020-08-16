@@ -15,7 +15,7 @@ for
 - [ ] code testing
 - [ ] error/info logging
 - [ ] make death count yer and death count since page loaded dynamic on front page
-- [ ] do french translation of homepage
+- [x] do french translation of homepage
 - [ ] remake favicon design to make it more visible
-- [ ] redirect all http trafic to https
-- [ ] restore the title typing animation
+- [x] redirect all http trafic to https
+- [x] restore the title typing animation
