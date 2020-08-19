@@ -23,7 +23,7 @@ const Footer = () => (
         </li>
         <li>
           <a
-            href="https://github.com/CodeForFaith"
+            href="https://github.com/RilDev"
             title="GitHub"
             target="_blank"
           >
