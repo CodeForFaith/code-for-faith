@@ -38,7 +38,7 @@ But God loves us so much, that He provided us a way to escape from His
 wrath. The only possible way for all our crimes to be punished without
 sending us to Hell.
 
-2000 years ago, God sent His only begotten Son, Jesus Christ, to live
+Long ago, God sent His only begotten Son, Jesus Christ, to live
 a perfect life on our behalf and to die crucified as a sacrifice for
 our sins. When He died on the cross, Jesus Christ paid for our sins.
 He then raised bodily on the third day, defeating death. He now has
