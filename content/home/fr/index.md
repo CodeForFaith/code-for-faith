@@ -33,7 +33,7 @@ Mais Dieu nous aime tellement, qu'Il nous a fourni un moyen d'échapper à Sa
 colère. Le seul moyen possible pour que tous nos crimes soient punis sans
 nous envoyer en Enfer.
 
-Il y a 2000 ans, Dieu a envoyé Son Fils unique engendré, Jésus-Christ, pour vivre
+Il y a longtemps, Dieu a envoyé Son Fils unique engendré, Jésus-Christ, pour vivre
 une vie parfaite à notre place et pour mourir crucifié en tant que sacrifice pour
 nos péchés. Quand Il est mort sur la croix, Jésus-Christ a payé pour nos péchés.
 Il est ensuite ressuscité physiquement le troisième jour, vainquant la mort. Il a maintenant
