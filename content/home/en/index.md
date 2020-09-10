@@ -52,7 +52,7 @@ forever in His kingdom.
 </span>
 
 About 150 000 people die every day. Since you started reading this,
-around 100 people died and faced God's judgment.
+around 100 people died and now have to face God's judgment.
 
 What about you? If you were to die right now, where would you spend
 eternity? In Heaven or in Hell?
