@@ -36,8 +36,7 @@ nous envoyer en Enfer.
 Il y a longtemps, Dieu a envoyé Son Fils unique engendré, Jésus-Christ, pour vivre
 une vie parfaite à notre place et pour mourir crucifié en tant que sacrifice pour
 nos péchés. Quand Il est mort sur la croix, Jésus-Christ a payé pour nos péchés.
-Il est ensuite ressuscité physiquement le troisième jour, vainquant la mort. Il a maintenant
-légalement le droit de nous pardonner nos péchés. Grâce à Lui, nous pouvons vivre
+Il est ensuite ressuscité physiquement le troisième jour, vainquant la mort. Il peut nous pardonner tous nos péchés. Grâce à Lui, nous pouvons vivre
 pour toujours dans Son royaume.
 
 <span class="verse">
