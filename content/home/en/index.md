@@ -41,8 +41,7 @@ sending us to Hell.
 Long ago, God sent His only begotten Son, Jesus Christ, to live
 a perfect life on our behalf and to die crucified as a sacrifice for
 our sins. When He died on the cross, Jesus Christ paid for our sins.
-He then raised bodily on the third day, defeating death. He now has
-legally the right to forgive us our sins. Through Him we can live
+He then raised bodily on the third day, defeating death. He can forgive us all our sins. Through Him we can live
 forever in His kingdom.
 
 <span class="verse">
